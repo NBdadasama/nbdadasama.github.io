@@ -6,7 +6,21 @@
   <link href="index.css" rel="stylesheet">
   <title>JS Bin</title>
 </head>
+<script>
+  function myFunction1()
+  {
+    x=document.getElementId("demo");
+    x.style.color="#ff0000";
+  }
+  function myFunction2()
+  {
+    x=document.getElementId("demo");
+    x.style.color="#ffffff";
+  }
+</script>
 <body>
-  <p>hello world!</p>
+  <p id="demo">hello world!</p>
+  <botton type="button" onclick="myFunction1()">变为红色</botton>
+  <botton type="button" onclick="myFunction2()">复原</botton>
 </body>
 </html>
